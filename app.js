@@ -1,15 +1,11 @@
-import express from "express"; //const express = require("express");
+import express from "express";
 import morgan from "morgan";
 import helmet from "helmet"; // 보안
 import cookieParser from "cookie-parser";
 import bodyParser from "body-parser";
+import { userRouter } from "./router";
 
 const app = express();
-
-const PORT = 4000;
-
-const handleListening = () =>
-  console.log(`Listening on : http://localhost:${PORT}`);
 
 // request object, response object
 const handleHome = (req, res) => res.send("Hello from home!!");
@@ -23,18 +19,11 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(morgan("dev"));
 app.use(helmet());
 
-/*
-// 연결 끊기
-const middleware = (req, res, next) => {
-  res.send("not happening");
-};
-*/
 ////////////////////////////////
-
-// app.get("/", middleware, handleHome);
-
 app.get("/", handleHome);
 
 app.get("/profile", handleProfile);
 
-app.listen(PORT, handleListening);
+app.use("/user", userRouter);
+
+export default app;
