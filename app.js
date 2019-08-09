@@ -1,5 +1,5 @@
 import express from "express";
-import morgan from "morgan";
+import morgan from "morgan"; // logging
 import helmet from "helmet"; // 보안
 import cookieParser from "cookie-parser";
 import bodyParser from "body-parser";
