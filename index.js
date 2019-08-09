@@ -10,9 +10,20 @@ const handleListening = () =>
 // request object, response object
 const handleHome = (req, res) => res.send("Hello from home!!");
 
-const handleProfile = (req, res) => res.send("You are on my profile");
+const handleProfile = (req, res) => res.send("You are on my profile123");
 
-app.get("/", handleHome);
+// middleware
+const betweenHome = (req, rest, next) => {
+  console.log("Between");
+  next();
+};
+
+// 모든 웹 사이트에 적용될 middleware
+app.use(betweenHome); // global
+
+////////////////////////////////
+
+app.get("/", betweenHome, handleHome);
 
 app.get("/profile", handleProfile);
 
