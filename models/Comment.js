@@ -3,7 +3,7 @@ import mongoose from "mongoose";
 const CommentSchema = new mongoose.Schema({
   text: {
     type: String,
-    required: "Txt is required"
+    required: "Text is required"
   },
   createAt: {
     type: Date,
