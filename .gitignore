@@ -1,8 +1,8 @@
 .DS_Store
 .vscode
 node_modules
-uploads
-static
+/uploads
+/static
 
 # Logs
 logs

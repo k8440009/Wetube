@@ -1,0 +1,233 @@
+[33mcommit f0bf4fa7cbcf0ae34d3883ccbc945ab5a519d757[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: lucas0730 <lucas0730@naver.com>
+Date:   Fri Aug 16 11:10:57 2019 +0900
+
+    ES6 with Webpack
+
+[33mcommit b4ba7c552efc8ab26cb88056246c304c1dd811d7[m
+Author: lucas0730 <lucas0730@naver.com>
+Date:   Thu Aug 15 20:33:07 2019 +0900
+
+    Styles with Webpack part Two
+
+[33mcommit 7641b466974ba1e45ef7969cf2dc67feb6c94736[m
+Author: lucas0730 <lucas0730@naver.com>
+Date:   Wed Aug 14 19:08:29 2019 +0900
+
+    Styles with Webpack part One
+
+[33mcommit 3a255779e942a8009ce3736c0fc364a9f5a1bcd5[m
+Author: lucas0730 <lucas0730@naver.com>
+Date:   Tue Aug 13 14:29:01 2019 +0900
+
+    Searching Videos
+
+[33mcommit 7640be924e910421e1ff127791f344887fdfa985[m
+Author: lucas0730 <lucas0730@naver.com>
+Date:   Tue Aug 13 12:59:43 2019 +0900
+
+    Installing ESLint
+
+[33mcommit 7f84d44f1ad4695c32cf22f02e13a697b3fdbbc8[m
+Author: lucas0730 <lucas0730@naver.com>
+Date:   Tue Aug 13 12:25:23 2019 +0900
+
+    Deleting a Video
+
+[33mcommit b76db52c8c0a1deef3f7310c9775562265bd74a2[m
+Author: lucas0730 <lucas0730@naver.com>
+Date:   Tue Aug 13 12:11:06 2019 +0900
+
+    Editing a Video
+
+[33mcommit 83ef21254eaa76554e5316dd0f410ba13c983dff[m
+Author: lucas0730 <lucas0730@naver.com>
+Date:   Tue Aug 13 11:24:52 2019 +0900
+
+    Getting Video by ID
+
+[33mcommit ea6dd1390b34a09076c24e8f71a758fc44eaf28a[m
+Author: lucas0730 <lucas0730@naver.com>
+Date:   Mon Aug 12 17:58:23 2019 +0900
+
+    Uploading and Creating a Video part Two
+
+[33mcommit d21a29953278451a20a5224fb73f744b22e620ab[m
+Author: lucas0730 <lucas0730@naver.com>
+Date:   Mon Aug 12 17:27:59 2019 +0900
+
+    Uploading and Creating a Video
+
+[33mcommit 2317afdeb947767e0ec9666f7fcc4c105f45add5[m
+Author: lucas0730 <lucas0730@naver.com>
+Date:   Mon Aug 12 15:31:20 2019 +0900
+
+    Home Controller Finished
+
+[33mcommit 868a2fe25036656d106369bbc290620ac748f35e[m
+Author: lucas0730 <lucas0730@naver.com>
+Date:   Mon Aug 12 15:12:34 2019 +0900
+
+    Comment Model
+
+[33mcommit 73cd4fd5981b0483e528015fc934234042572428[m
+Author: lucas0730 <lucas0730@naver.com>
+Date:   Mon Aug 12 14:48:48 2019 +0900
+
+    Video Model
+
+[33mcommit 128b08bd87af317b85fd99f0cdf1d7d40cecd894[m
+Author: lucas0730 <lucas0730@naver.com>
+Date:   Mon Aug 12 14:34:04 2019 +0900
+
+    Configuring Dot Env
+
+[33mcommit c3cfb89bdca827d62510ca9c2351b4ad9a257c15[m
+Author: lucas0730 <lucas0730@naver.com>
+Date:   Sun Aug 11 15:13:19 2019 +0900
+
+    Connecting to MongoDB
+
+[33mcommit 5ee146006c79ec30ff20f3e12347b91a7ae11c7d[m
+Author: lucas0730 <lucas0730@naver.com>
+Date:   Sun Aug 11 01:23:13 2019 +0900
+
+    More Controlers
+
+[33mcommit cadfd06b72f0d656a1bfb596ac408c99cb8b5c6e[m
+Author: lucas0730 <lucas0730@naver.com>
+Date:   Sun Aug 11 00:56:56 2019 +0900
+
+    Log In and User Profile Controller
+
+[33mcommit 02b38598d4dd793200ddbf1f47f13d7dcf17c429[m
+Author: lucas0730 <lucas0730@naver.com>
+Date:   Sun Aug 11 00:26:53 2019 +0900
+
+    Join Controller
+
+[33mcommit 44bf87218654df19ee44bf5558c359cb2c57bfe4[m
+Author: lucas0730 <lucas0730@naver.com>
+Date:   Sat Aug 10 22:28:28 2019 +0900
+
+    Home Controller part Two
+
+[33mcommit d64b7db7d5758363af8c16b193a093a13534e226[m
+Author: lucas0730 <lucas0730@naver.com>
+Date:   Sat Aug 10 21:45:32 2019 +0900
+
+    Home Controller
+
+[33mcommit e82019fbd9dc75b6b663d57194814977dfd9a88f[m
+Author: lucas0730 <lucas0730@naver.com>
+Date:   Sat Aug 10 16:36:27 2019 +0900
+
+    Change Profile HTML
+
+[33mcommit 876ea367834a82382aa967c77f4c033dad7b76df[m
+Author: lucas0730 <lucas0730@naver.com>
+Date:   Sat Aug 10 15:55:49 2019 +0900
+
+    Join / Log In HTML
+
+[33mcommit 867f7fc4d780563bd0633e8f67e7ecc86d18074a[m
+Author: lucas0730 <lucas0730@naver.com>
+Date:   Sat Aug 10 15:30:28 2019 +0900
+
+     Search Controller
+
+[33mcommit a477500c7ff6f632f0f362d485aabdb74e741a09[m
+Author: lucas0730 <lucas0730@naver.com>
+Date:   Sat Aug 10 00:31:16 2019 +0900
+
+    Template Variables in Pug
+
+[33mcommit 3f9a87bacc6bb39ed41e7137401ac74589c5c1eb[m
+Author: lucas0730 <lucas0730@naver.com>
+Date:   Sat Aug 10 00:20:21 2019 +0900
+
+    Local Variables in Pug
+
+[33mcommit ed235910b77b071ca6b439a158d9fcec1e92fab8[m
+Author: lucas0730 <lucas0730@naver.com>
+Date:   Fri Aug 9 23:59:08 2019 +0900
+
+    Partials with Pug
+
+[33mcommit 15bc388572e38f122be3cc3d2448af350ad8b4a1[m
+Author: lucas0730 <lucas0730@naver.com>
+Date:   Fri Aug 9 20:20:37 2019 +0900
+
+    Installing Pug
+
+[33mcommit b8b534d865c78ed7d1dff20eaf0378aaab889136[m
+Author: lucas0730 <lucas0730@naver.com>
+Date:   Fri Aug 9 20:09:38 2019 +0900
+
+    MVC Pattern part 3
+
+[33mcommit 5343b40f7b37b533b5863608f38a831d0c314a6b[m
+Author: lucas0730 <lucas0730@naver.com>
+Date:   Fri Aug 9 19:47:35 2019 +0900
+
+    MVC Pattern part 3
+
+[33mcommit 947f3da393933c7804dc0689e7fe9cb8658c2e41[m
+Author: lucas0730 <lucas0730@naver.com>
+Date:   Fri Aug 9 19:04:47 2019 +0900
+
+    MVC Pattern part 2
+
+[33mcommit 2570e8b96da989d619e2228fc4a74130a7ccf65e[m
+Author: lucas0730 <lucas0730@naver.com>
+Date:   Fri Aug 9 18:38:34 2019 +0900
+
+    MVC Pattern part 1
+
+[33mcommit f0539cad8e4a19e459d2b88291ccaaf71f7274a2[m
+Author: lucas0730 <lucas0730@naver.com>
+Date:   Fri Aug 9 18:14:03 2019 +0900
+
+    Express Core : Routing
+
+[33mcommit d26d55e619a17c7d261f9d5ff854aba5c4eae3a1[m
+Author: lucas0730 <lucas0730@naver.com>
+Date:   Fri Aug 9 14:44:20 2019 +0900
+
+    Express Core : Middlewares part 2
+
+[33mcommit a40cf06a76a3f861afe345218880e780a6c1fb55[m
+Author: lucas0730 <lucas0730@naver.com>
+Date:   Fri Aug 9 14:12:36 2019 +0900
+
+    Express Core : Middlewares part 1
+
+[33mcommit c71632e0166bd2384c5bf433e2c1961a74c897dc[m
+Author: lucas0730 <lucas0730@naver.com>
+Date:   Fri Aug 9 02:47:57 2019 +0900
+
+    ES6 on NodeJS using Babel
+
+[33mcommit dd3ef2e31e689b71ab939a1b9560cec12c073c16[m
+Author: lucas0730 <lucas0730@naver.com>
+Date:   Fri Aug 9 02:15:23 2019 +0900
+
+     Handling Route with Express
+
+[33mcommit 3c0d0ae901b5aa6da464244c50f4042ada5b8982[m
+Author: lucas0730 <lucas0730@naver.com>
+Date:   Fri Aug 9 01:46:31 2019 +0900
+
+    initial commit
+
+[33mcommit 54aaf1ef1fe4c5aedb6c997fc618ad606151ac09[m
+Author: lucas0730 <lucas0730@naver.com>
+Date:   Fri Aug 9 01:44:06 2019 +0900
+
+    initial commit
+
+[33mcommit 43f52064449ae85affdd8a4edff7fed9fb53a807[m
+Author: lucas0730 <lucas0730@naver.com>
+Date:   Mon Aug 5 04:07:42 2019 +0900
+
+    Initial commit
