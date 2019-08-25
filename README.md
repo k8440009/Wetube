@@ -12,3 +12,19 @@ Cloning Youtube with Vanilla and NodeJS
 - [ ] Upload
 - [ ] Video Detail
 - [ ] Edit video
+
+## MiddleWare
+
+- Mongoose
+- dotenv
+- Passport
+  https://github.com/saintedlama/passport-local-mongoose <br/>
+
+## DB
+
+- mongoDB
+
+### execute
+
+- npm run dev:servers
+- npm run dev:assets
