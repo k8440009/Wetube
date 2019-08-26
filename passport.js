@@ -5,3 +5,5 @@ import User from "./models/User";
 passport.use(User.createStrategy());
 
 // serialize deserialize
+passport.serializeUser(User.serializeUser);
+passport.deserializeUser(User.deserializeUser);
