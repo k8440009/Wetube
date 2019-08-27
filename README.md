@@ -18,9 +18,11 @@ Cloning Youtube with Vanilla and NodeJS
 - Mongoose
 - dotenv
 - nodemon
-- Passport : https://github.com/saintedlama/passport-local-mongoose
+- Passport : 가입, 로그인
   1. serialization : 어떤 filed가 쿠키에 포함될 것인지 알려주는 역할
   2. deserialize : 쿠키의 정보를 어떻게 사용자로 전환하는가?
+  - https://github.com/saintedlama/passport-local-mongoose
+- express-session : session 정보
 
 ## DB
 

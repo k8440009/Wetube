@@ -15,19 +15,16 @@ export const postJoin = async (req, res, next) => {
     res.render("join", { pageTitle: "Join" });
   } else {
     try {
-      // 유저 등록
       const user = await User({
         name,
         email
       });
       await User.register(user, password);
-      // portJoin -> postLogin
       next();
     } catch (error) {
       console.log(error);
       res.redirect(routes.home);
     }
-    // 유저 등록 후 바로 로그인 시켜
   }
 };
 
