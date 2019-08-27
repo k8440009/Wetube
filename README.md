@@ -23,6 +23,7 @@ Cloning Youtube with Vanilla and NodeJS
   2. deserialize : 쿠키의 정보를 어떻게 사용자로 전환하는가?
   - https://github.com/saintedlama/passport-local-mongoose
 - express-session : session 정보
+- connect-mongo : DB에 session 저장
 
 ## DB
 
