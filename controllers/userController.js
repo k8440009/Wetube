@@ -37,8 +37,40 @@ export const postLogin = passport.authenticate("local", {
   successRedirect: routes.home
 });
 
+export const githubLogin = passport.authenticate("github");
+
+export const githubLoginCallback = async (_, __, profile, cb) => {
+  const {
+    _json: { id, avatar_url, name, email }
+  } = profile;
+  // 인증 O
+  try {
+    const user = await User.findOne({ email });
+    // 이미 이메일 + 비번 아이디가 있는 경우
+    if (user) {
+      user.githubId = id;
+      user.save();
+      return cb(null, user);
+    }
+    const newUser = await User.create({
+      email,
+      name,
+      githubId: id,
+      avatarUrl: avatar_url
+    });
+    return cb(null, newUser);
+  } catch (error) {
+    // 인증 X
+    return cb(error);
+  }
+};
+
+export const postGithubLogIn = (req, res) => {
+  res.redirect(routes.home);
+};
 export const logout = (req, res) => {
   // To Do : Process log out
+  req.logout();
   res.redirect(routes.home);
 };
 
