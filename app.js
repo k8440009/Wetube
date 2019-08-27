@@ -2,12 +2,15 @@ import express from "express";
 import morgan from "morgan"; // logging
 import helmet from "helmet"; // 보안
 import bodyParser from "body-parser";
+import passport from "passport";
 import cookieParser from "cookie-parser";
 import { localsMiddleware } from "./middlewares";
 import routes from "./routes";
 import userRouter from "./routers/userRouter";
 import videoRouter from "./routers/videoRouter";
 import globalRouter from "./routers/globalRouter";
+
+import "./passport";
 
 const app = express();
 
@@ -19,6 +22,9 @@ app.use(cookieParser());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(morgan("dev"));
+app.use(passport.initialize());
+app.use(passport.session()); // session 저장
+
 app.use(localsMiddleware);
 
 app.use(routes.home, globalRouter);
