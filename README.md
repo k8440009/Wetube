@@ -6,7 +6,7 @@ Cloning Youtube with Vanilla and NodeJS
 - [x] Join
   1. 일반 회원 가입 [x]
   2. 깃 허브 회원 가입 [x]
-  3. 다른 회원 가입
+  3. 페이스북 회원 가입 [x]
 - [x] login
   1. 로그인 구현 [x]
   2. public, private 접근 [x]

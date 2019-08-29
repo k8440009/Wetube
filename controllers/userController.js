@@ -55,7 +55,7 @@ export const githubLoginCallback = async (_, __, profile, cb) => {
     const newUser = await User.create({
       email,
       name,
-      facebookId: id,
+      githubId: id,
       avatarUrl
     });
     return cb(null, newUser);
@@ -81,13 +81,12 @@ export const facebookLoginCallback = async (_, __, profile, cb) => {
     if (user) {
       user.githubId = id;
       user.save();
-      user.avatarUrl = `https://graph.facebook.com/${id}/picture?type=large`;
       return cb(null, user);
     }
     const newUser = await User.create({
       email,
       name,
-      githubId: id,
+      facebookId: id,
       avatarUrl: `https://graph.facebook.com/${id}/picture?type=large`
     });
     return cb(null, newUser);
@@ -123,7 +122,7 @@ export const userDetail = async (req, res) => {
   }
 };
 
-export const editProfile = (req, res) =>
+export const getEditProfile = (req, res) =>
   res.render("editProfile", { pageTitle: "Edit Profile" });
 export const changePassword = (req, res) =>
   res.render("changePassword", { pageTitle: "Change Password" });
