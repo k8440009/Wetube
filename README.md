@@ -17,10 +17,11 @@ Cloning Youtube with Vanilla and NodeJS
   2. 프로필 수정 [x]
   3. 비밀번호 수정 [x]
 - [x] Upload
-- [ ] Video Detail
+- [x] Video Detail
   1. scss 추가 [x]
   2. 올린 사람 추가 [x]
-- [ ] Edit video
+  3. 비디오 수정 추가 [x]
+- [x] Video Player
 
 ## MiddleWare
 
