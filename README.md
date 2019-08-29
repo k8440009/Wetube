@@ -13,9 +13,9 @@ Cloning Youtube with Vanilla and NodeJS
 - [x] Search
 - [ ] User Detail
 - [ ] Edit Profile
-  1. scss 추가
+  1. scss 추가 [X]
   2. 프로필 수정 [x]
-  3. 비밀번호 수정
+  3. 비밀번호 수정 [X]
 - [ ] Change Password
 - [ ] Upload
 - [ ] Video Detail
