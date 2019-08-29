@@ -21,7 +21,14 @@ Cloning Youtube with Vanilla and NodeJS
   1. scss 추가 [x]
   2. 올린 사람 추가 [x]
   3. 비디오 수정 추가 [x]
-- [x] Video Player
+- [] Video Player
+  1. scss 추가 [x]
+  2. 실행/멈춤 [X]
+  3. 실행/멈춤시 i 태그 추가
+  4. 음소거
+  5. 풀 스크린
+  6. 현재시간/전체시간
+  7. 볼륨바
 
 ## MiddleWare
 
