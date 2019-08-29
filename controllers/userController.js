@@ -48,14 +48,14 @@ export const githubLoginCallback = async (_, __, profile, cb) => {
     const user = await User.findOne({ email });
     // 이미 이메일 + 비번 아이디가 있는 경우
     if (user) {
-      user.githubId = id;
+      user.facebookId = id;
       user.save();
       return cb(null, user);
     }
     const newUser = await User.create({
       email,
       name,
-      githubId: id,
+      facebookId: id,
       avatarUrl
     });
     return cb(null, newUser);
@@ -68,6 +68,39 @@ export const githubLoginCallback = async (_, __, profile, cb) => {
 export const postGithubLogIn = (req, res) => {
   res.redirect(routes.home);
 };
+
+export const facebookLogin = passport.authenticate("facebook");
+
+export const facebookLoginCallback = async (_, __, profile, cb) => {
+  const {
+    _json: { id, name, email }
+  } = profile;
+  try {
+    const user = await User.findOne({ email });
+    // 이미 이메일 + 비번 아이디가 있는 경우
+    if (user) {
+      user.githubId = id;
+      user.save();
+      user.avatarUrl = `https://graph.facebook.com/${id}/picture?type=large`;
+      return cb(null, user);
+    }
+    const newUser = await User.create({
+      email,
+      name,
+      githubId: id,
+      avatarUrl: `https://graph.facebook.com/${id}/picture?type=large`
+    });
+    return cb(null, newUser);
+  } catch (error) {
+    // 인증 X
+    return cb(error);
+  }
+};
+
+export const postFacebookLogin = (req, res) => {
+  res.redirect(routes.home);
+};
+
 export const logout = (req, res) => {
   // To Do : Process log out
   req.logout();
@@ -77,8 +110,18 @@ export const logout = (req, res) => {
 export const getMe = (req, res) => {
   res.render("userDetail", { pageTitle: "User Detail", user: req.user });
 };
-export const userDetail = (req, res) =>
-  res.render("userDetail", { pageTitle: "User Detail" });
+export const userDetail = async (req, res) => {
+  const {
+    params: { id }
+  } = req;
+
+  try {
+    const user = await User.find(id);
+    res.render("userDetail", { pageTitle: "User Detail", user });
+  } catch (error) {
+    res.redirect(routes.home);
+  }
+};
 
 export const editProfile = (req, res) =>
   res.render("editProfile", { pageTitle: "Edit Profile" });

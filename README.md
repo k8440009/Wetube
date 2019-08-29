@@ -36,6 +36,7 @@ Cloning Youtube with Vanilla and NodeJS
 
 - express-session : session 정보
 - connect-mongo : DB에 session 저장
+- localtunnel : http인 localhost -> https localhost로 보이게 만듬
 
 ## DB
 
