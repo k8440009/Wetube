@@ -26,7 +26,7 @@ Cloning Youtube with Vanilla and NodeJS
   2. 실행/멈춤 [x]
   3. 음소거 [x]
   4. 풀 스크린 [x]
-  5. 현재시간/전체시간 []
+  5. 현재시간/전체시간 [x]
   6. 볼륨바 []
 
 ## MiddleWare
