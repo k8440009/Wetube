@@ -12,13 +12,14 @@ Cloning Youtube with Vanilla and NodeJS
   2. public, private 접근 [x]
 - [x] Search
 - [ ] User Detail
-- [ ] Edit Profile
-  1. scss 추가 [X]
+- [x] Edit Profile
+  1. scss 추가 [x]
   2. 프로필 수정 [x]
-  3. 비밀번호 수정 [X]
-- [ ] Change Password
-- [ ] Upload
+  3. 비밀번호 수정 [x]
+- [x] Upload
 - [ ] Video Detail
+  1. scss 추가 [x]
+  2. 올린 사람 추가 [x]
 - [ ] Edit video
 
 ## MiddleWare
