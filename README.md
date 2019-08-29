@@ -13,7 +13,7 @@ Cloning Youtube with Vanilla and NodeJS
 - [x] Search
 - [ ] User Detail
 - [x] Edit Profile
-  1. scss 추가 [x]
+  1. css 추가 [x]
   2. 프로필 수정 [x]
   3. 비밀번호 수정 [x]
 - [x] Upload
@@ -21,16 +21,19 @@ Cloning Youtube with Vanilla and NodeJS
   1. scss 추가 [x]
   2. 올린 사람 추가 [x]
   3. 비디오 수정 추가 [x]
-- [] Video Player
-  1. scss 추가 [x]
+- [x] Video Player
+  1. css 추가 [x]
   2. 실행/멈춤 [x]
   3. 음소거 [x]
   4. 풀 스크린 [x]
   5. 현재시간/전체시간 [x]
-  6. 볼륨바 []
+  6. 볼륨바 [X]
   1) scss 추가 [x] <br/>
   2) 볼륨 음소거 하면 이전 볼륨값으로 되돌려줌 [x] <br/>
-  3)
+- [x] video Recoder
+  1. css 추가 [x]
+  2. 비디오 녹화, 멈춤 [x]
+  3. 비디오 다운로드 [x]
 
 ## MiddleWare
 
