@@ -13,6 +13,9 @@ Cloning Youtube with Vanilla and NodeJS
 - [x] Search
 - [ ] User Detail
 - [ ] Edit Profile
+  1. scss 추가
+  2. 프로필 수정 [x]
+  3. 비밀번호 수정
 - [ ] Change Password
 - [ ] Upload
 - [ ] Video Detail
@@ -23,6 +26,8 @@ Cloning Youtube with Vanilla and NodeJS
 - Mongoose
 - dotenv
 - nodemon
+- body-parser : body로부터 파라매터를 편리하게 추출
+- multer : 파일 업로드
 - Passport : 가입, 로그인
 
   1. serialization : 어떤 filed가 쿠키에 포함될 것인지 알려주는 역할
