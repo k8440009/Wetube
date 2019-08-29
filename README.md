@@ -28,6 +28,9 @@ Cloning Youtube with Vanilla and NodeJS
   4. 풀 스크린 [x]
   5. 현재시간/전체시간 [x]
   6. 볼륨바 []
+  1) scss 추가 [x] <br/>
+  2) 볼륨 음소거 하면 이전 볼륨값으로 되돌려줌 [x] <br/>
+  3)
 
 ## MiddleWare
 
