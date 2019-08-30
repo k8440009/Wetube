@@ -7,6 +7,13 @@ const currentTime = document.getElementById("currentTime");
 const totalTime = document.getElementById("totalTime");
 const volumeRange = document.getElementById("jsVolume");
 
+// 뷰 등록
+const registerView = () => {
+  const videoId = window.location.href.split("/videos/")[1];
+  fetch(`/api/${videoId}/view`, {
+    method: "POST"
+  });
+};
 // Play 버튼
 function handlePlayClick() {
   if (videoPlayer.paused) {
@@ -86,9 +93,10 @@ function setTotalTime() {
   totalTime.innerHTML = totalTimeString;
   setInterval(getCurrentTime, 1000); // 현재 시간을 1초마다 호출
 }
-// 동영상이 끝난 경우 시작으로 돌아감
+// 동영상이 끝난 경우
 function handleEnded() {
-  videoPlayer.currentTime = 0;
+  registerView(); // 뷰 증가
+  videoPlayer.currentTime = 0; // 시작으로 돌아감
   playBtn.innerHTML = '<i class="fas fa-play"></i>';
 }
 //

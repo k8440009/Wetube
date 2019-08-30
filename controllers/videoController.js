@@ -105,3 +105,21 @@ export const deleteVideo = async (req, res) => {
   }
   res.redirect(routes.home);
 };
+
+// 비디오 뷰 시청 수 증가
+export const postRegisterView = async (req, res) => {
+  const {
+    params: { id }
+  } = req;
+  // 1. 비디오를 찾음
+  try {
+    const video = await Video.findById(id);
+    video.views += 1;
+    video.save();
+    res.status(200);
+  } catch (error) {
+    res.status(400); // 잘못된 요청
+  } finally {
+    res.end();
+  }
+};

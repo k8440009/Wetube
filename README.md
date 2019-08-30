@@ -2,7 +2,7 @@
 
 Cloning Youtube with Vanilla and NodeJS
 
-- [ ] Home
+- [x] Home
 - [x] Join
   1. 일반 회원 가입 [x]
   2. 깃 허브 회원 가입 [x]
@@ -11,8 +11,7 @@ Cloning Youtube with Vanilla and NodeJS
   1. 로그인 구현 [x]
   2. public, private 접근 [x]
 - [x] Search
-- [ ] User Detail
-- [x] Edit Profile
+- [x] Edit User Profile
   1. css 추가 [x]
   2. 프로필 수정 [x]
   3. 비밀번호 수정 [x]
@@ -34,13 +33,22 @@ Cloning Youtube with Vanilla and NodeJS
   1. css 추가 [x]
   2. 비디오 녹화, 멈춤 [x]
   3. 비디오 다운로드 [x]
+- [] video View
 
-## MiddleWare
+## MiddleWare, etc..
 
+- express
 - Mongoose
 - dotenv
+- babel
 - nodemon
 - body-parser : body로부터 파라매터를 편리하게 추출
+- autoprefixer
+- cookie-parser
+- cross-env
+- sass
+- helmet
+- morgan
 - multer : 파일 업로드
 - Passport : 가입, 로그인
 
@@ -56,6 +64,8 @@ Cloning Youtube with Vanilla and NodeJS
 - express-session : session 정보
 - connect-mongo : DB에 session 저장
 - localtunnel : http인 localhost -> https localhost로 보이게 만듬
+- ajax : soap(simple object access protocol) 이 아님, Asynchronouse javascript and xml (비동기 js, xml) 통신
+- axios : http request 요청 수정
 
 ## DB
 
