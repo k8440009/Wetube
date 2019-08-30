@@ -33,7 +33,10 @@ Cloning Youtube with Vanilla and NodeJS
   1. css 추가 [x]
   2. 비디오 녹화, 멈춤 [x]
   3. 비디오 다운로드 [x]
-- [] video View
+- [x] Video View
+  1. 영상이 끝나면 view 증가 [x]
+- [x] Comment
+  1. comment 추가
 
 ## MiddleWare, etc..
 
