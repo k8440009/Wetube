@@ -72,6 +72,8 @@ Cloning Youtube with Vanilla and NodeJS
 - ajax : soap(simple object access protocol) 이 아님, Asynchronouse javascript and xml (비동기 js, xml) 통신
 - axios : http request 요청 수정
 - Amazon software development kit (aws-sdk)
+- get-blob-duration : 영상의 길이를 알 수 있음
+- @babel/runtime
 
 ## DB
 
