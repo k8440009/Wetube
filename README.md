@@ -39,6 +39,8 @@ Cloning Youtube with Vanilla and NodeJS
   1. 영상이 끝나면 view 증가 [x]
 - [x] Comment
   1. comment 추가
+- [x] db
+  1. mongo atlas 연결 및 cluster 생성 [x]
 
 ## MiddleWare, etc..
 
@@ -83,6 +85,7 @@ Cloning Youtube with Vanilla and NodeJS
 
 - npm run dev:server
 - npm run dev:assets
+- npm run build && npm start
 
 ## attetion
 

@@ -5,6 +5,8 @@ node_modules
 uploads
 /static
 static
+build
+/build
 
 # Logs
 logs
