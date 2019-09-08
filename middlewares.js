@@ -1,8 +1,29 @@
 import multer from "multer";
+import multerS3 from "multer-s3";
+import aws from "aws-sdk";
 import routes from "./routes";
 
-const multerVideo = multer({ dest: "uploads/videos/" });
-const multerAvatar = multer({ dest: "uploads/avatars/" });
+const s3 = new aws.S3({
+  accessKeyId: process.env.AWS_KEY,
+  secretAccessKey: process.env.AWS_PRIVATE_KEY
+});
+// S3 upload
+const multerVideo = multer({
+  // 저장소를 S3로 지정
+  storage: multerS3({
+    s3,
+    acl: "public-read", // Access Control List
+    bucket: "wetube-k8440009/video" // bucket : bucketName/storage
+  })
+});
+const multerAvatar = multer({
+  // 저장소를 S3로 지정
+  storage: multerS3({
+    s3,
+    acl: "public-read", // Access Control List
+    bucket: "wetube-k8440009/avatar" // bucket : bucketName/storage
+  })
+});
 
 export const localsMiddleware = (req, res, next) => {
   res.locals.siteName = "WeTube";

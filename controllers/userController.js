@@ -2,6 +2,7 @@ import passport from "passport";
 import routes from "../routes";
 import User from "../models/User";
 
+// 가입
 export const getJoin = (req, res) => {
   res.render("join", { pageTitle: "Join" });
 };
@@ -27,7 +28,7 @@ export const postJoin = async (req, res, next) => {
     }
   }
 };
-
+// 로그인
 export const getLogin = (req, res) =>
   res.render("login", { pageTitle: "Log In" });
 
@@ -99,7 +100,7 @@ export const facebookLoginCallback = async (_, __, profile, cb) => {
 export const postFacebookLogin = (req, res) => {
   res.redirect(routes.home);
 };
-
+// 로그 아웃
 export const logout = (req, res) => {
   // To Do : Process log out
   req.logout();
@@ -109,7 +110,7 @@ export const logout = (req, res) => {
 export const getMe = (req, res) => {
   res.render("userDetail", { pageTitle: "User Detail", user: req.user });
 };
-
+// 상세 유저
 export const userDetail = async (req, res) => {
   const {
     params: { id }
@@ -123,7 +124,7 @@ export const userDetail = async (req, res) => {
     res.redirect(routes.home);
   }
 };
-
+// 프로필
 export const getEditProfile = (req, res) =>
   res.render("editProfile", { pageTitle: "Edit Profile" });
 
@@ -137,7 +138,7 @@ export const postEditProfile = async (req, res) => {
     await User.findByIdAndUpdate(req.user.id, {
       name,
       email,
-      avatarUrl: file ? file.path : req.user.avatarUrl
+      avatarUrl: file ? file.location : req.user.avatarUrl
     });
     res.redirect(routes.me);
   } catch (error) {

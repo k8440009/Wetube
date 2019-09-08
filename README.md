@@ -15,7 +15,9 @@ Cloning Youtube with Vanilla and NodeJS
   1. css 추가 [x]
   2. 프로필 수정 [x]
   3. 비밀번호 수정 [x]
+  4. AWS에 유저 사진 upload [x]
 - [x] Upload
+  1. AWS에 동영상 upload [x]
 - [x] Video Detail
   1. scss 추가 [x]
   2. 올린 사람 추가 [x]
@@ -52,7 +54,7 @@ Cloning Youtube with Vanilla and NodeJS
 - sass
 - helmet
 - morgan
-- multer : 파일 업로드
+- multer : 파일 업로드, multer-s3 : s3에 파일 업로드
 - Passport : 가입, 로그인
 
   1. serialization : 어떤 filed가 쿠키에 포함될 것인지 알려주는 역할
@@ -69,6 +71,7 @@ Cloning Youtube with Vanilla and NodeJS
 - localtunnel : http인 localhost -> https localhost로 보이게 만듬
 - ajax : soap(simple object access protocol) 이 아님, Asynchronouse javascript and xml (비동기 js, xml) 통신
 - axios : http request 요청 수정
+- Amazon software development kit (aws-sdk)
 
 ## DB
 
@@ -76,5 +79,13 @@ Cloning Youtube with Vanilla and NodeJS
 
 ## Execute
 
-- npm run dev:servers
+- npm run dev:server
 - npm run dev:assets
+
+## attetion
+
+1. 서버에 유저의 파일 저장 하지 말기
+
+- 바이러스 위험
+- 트래픽 증가
+- 서버 여러개가 떨어져 있으면 처리 어려움
