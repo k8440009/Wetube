@@ -76,6 +76,7 @@ Cloning Youtube with Vanilla and NodeJS
 - Amazon software development kit (aws-sdk)
 - get-blob-duration : 영상의 길이를 알 수 있음
 - @babel/runtime
+- sass : HEROKU
 
 ## DB
 
