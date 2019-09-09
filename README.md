@@ -48,6 +48,10 @@ Cloning Youtube with Vanilla and NodeJS
 - Mongoose
 - dotenv
 - babel
+
+1.  @babel/runtime
+2.  @babel/cli
+
 - nodemon
 - body-parser : body로부터 파라매터를 편리하게 추출
 - autoprefixer
@@ -75,7 +79,6 @@ Cloning Youtube with Vanilla and NodeJS
 - axios : http request 요청 수정
 - Amazon software development kit (aws-sdk)
 - get-blob-duration : 영상의 길이를 알 수 있음
-- @babel/runtime
 - sass : HEROKU
 
 ## DB
